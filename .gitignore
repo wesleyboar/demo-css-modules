@@ -1,0 +1,10 @@
+# Artifacts
+dist/
+
+# Node & NPM
+node_modules
+npm-debug.log
+
+# Operating System
+.DS_Store
+.vscode

@@ -1,0 +1,17 @@
+{
+  "name": "css-modules-demo",
+  "version": "1.0.0",
+  "description": "A demo of CSS Modules (for FP-103)",
+  "main": "index.js",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wbomar@tacc.utexas.edu",
+  "license": "ISC"
+}
