@@ -1,5 +1,6 @@
 # Artifacts
 dist/
+.cache/
 
 # Node & NPM
 node_modules

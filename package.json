@@ -8,8 +8,12 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "sass": "^1.26.3"
+  },
   "scripts": {
+    "start": "parcel ./public/index.html",
+    "build": "parcel build ./public/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "wbomar@tacc.utexas.edu",
