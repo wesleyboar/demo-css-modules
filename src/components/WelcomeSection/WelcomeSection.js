@@ -4,13 +4,16 @@ import Nav from '../Nav';
 
 const dumbRoutes = [{
     url: 'fake',
-    text: 'Fake Link 1'
+    text: 'Fake Link 1',
+    icon: 'nav-folder'
   }, {
     url: 'fool',
-    text: 'Fool Me Twice'
+    text: 'Fool Me Twice',
+    icon: 'nav-application'
   }, {
     url: 'fly',
-    text: 'Fly, You Fool'
+    text: 'Fly, You Fool',
+    icon: 'nav-dashboard'
 }];
 
 function WelcomeSection() {

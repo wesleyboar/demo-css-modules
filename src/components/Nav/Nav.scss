@@ -1,0 +1,21 @@
+/* BEM: The "block" is the component itself */
+/* Here are styles for the component root */
+.container {
+  composes: c-nav from '/../src/styles/components/c-nav.scss';
+}
+
+/* BEM: Here are the child "elements" */
+.list {
+  composes: c-nav__list from '/../src/styles/components/c-nav.scss';
+}
+.item {
+  composes: c-nav__item from '/../src/styles/components/c-nav.scss';
+
+  border-bottom: 1px solid gray;
+}
+.link {
+  composes: c-nav__link from '/../src/styles/components/c-nav.scss';
+}
+.icon {
+  composes: c-nav__icon from '/../src/styles/components/c-nav.scss';
+}

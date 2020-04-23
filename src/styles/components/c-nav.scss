@@ -1,0 +1,31 @@
+$color: snow;
+
+.c-nav {
+  background-color: $color;
+}
+
+.c-nav__list {
+  padding: 20px 0;
+}
+ul.c-nav__list {
+  margin: 0;
+}
+
+li.c-nav__item {
+  list-style: none;
+}
+
+.c-nav__link {
+  display: block;
+  padding: 0.6rem 3.0rem;
+
+  color: gray;
+  text-decoration: none;
+}
+.c-nav__link:hover {
+  background-color: lavender;
+}
+
+.c-nav__icon {
+  margin-right: 1.6rem;
+}

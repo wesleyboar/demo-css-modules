@@ -1,14 +1,20 @@
 import React from 'react';
 
-import './Nav.css';
+import classNames from './Nav.scss';
 
 function Nav(props) {
   return (
-    <nav className="nav">
-      <ul>
+    <nav className={classNames.container}>
+      <ul className={classNames.list}>
       {props.children.map( (link, index) => (
-        <li className="item" key={index /* WARNING: Only for demo */}>
-          <a className="link" href={link.url}>{link.text}</a>
+        <li className={classNames.item}
+          key={index /* WARNING: Only for demo */}>
+          <a className={classNames.link}
+            href={'#' + link.url}>
+            <i className={classNames.icon + ' icon-' + link.icon}
+              ></i>
+            <span className={classNames.text}>{link.text}</span>
+          </a>
         </li>
       ))}
       </ul>
