@@ -1,0 +1,40 @@
+/* ELEMENTS: Button */
+
+button,
+input[type="reset"],
+input[type="submit"],
+input[type="clear"] {
+    padding: 0.5em 1.14em; /* NOTE: Wes B used `0.5em` isntead of `0.571…` (8px) */
+
+    color: var(--global-color-primary--xx-light);
+    background-color: var(--global-color-accent--normal);
+    border: var(--global-border-width--thick) solid transparent;
+
+    font-weight: bold;
+}
+button:active,
+input[type="reset"]:active,
+input[type="submit"]:active,
+input[type="clear"]:active {
+    position: relative;
+    left: 1px;
+    top: 1px;
+}
+button:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+input[type="clear"]:hover {
+    color: var(--global-color-interaction--normal);
+    border-color: var(--global-color-interaction--normal);
+    background-color: var(--global-color-interaction--light);
+}
+button:disabled,
+input[type="reset"]:disabled,
+input[type="submit"]:disabled,
+input[type="clear"]:disabled {
+    color: var(--global-color-primary--dark);
+    border-color: var(--global-color-primary--dark);
+    background-color: var(--global-color-primary--normal);
+
+    opacity: 0.5;
+}

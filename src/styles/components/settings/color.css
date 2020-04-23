@@ -1,0 +1,23 @@
+
+:root {
+    /* Primary (Text, Layout) */
+    --global-color-primary--xx-light: #FFFFFF;
+    --global-color-primary--x-light: #EEEEEE;
+    --global-color-primary--light: #CCCCCC;
+    --global-color-primary--normal: #808080;
+    --global-color-primary--dark: #666666;
+    --global-color-primary--x-dark: #333333;
+    --global-color-primary--xx-dark: #000000;
+
+    /* General Distinction */
+    --global-color-accent--normal: #9D85EF;
+        --global-color-accent--light: #DCD2FF;
+    --global-color-inform--normal: #55B7D8;
+    --global-color-success--normal: #47AB6C;
+    --global-color-warning--normal: #E89024;
+    --global-color-danger--normal: #C93D3D;
+
+    /* Interactive Bits */
+    --global-color-interaction--light: var(--global-color-accent--light);
+    --global-color-interaction--normal: var(--global-color-accent--normal);
+}

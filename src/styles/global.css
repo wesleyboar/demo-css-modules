@@ -1,1 +1,38 @@
+/* FAQ: Organized via ITCSS */
+/* SEE: https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/ */
+
+/* SETTINGS */
+/* FAQ: Variables for values, media queries, selectors, etc */
+@import url('./settings/color.css');
+@import url('./settings/font.css');
+@import url('./settings/border.css');
+
+/* TOOLS */
+/* FAQ: Mixins, functions, and other processing logic */
+/* … */
+
+/* GENERIC */
+/* FAQ: Reset and/or normalize styles, box-sizing definition, etc. */
+@import url('./generics/all-elements.css');
+@import url('./generics/roots.css');
+
+/* ELEMENTS */
+/* FAQ: Styling for bare HTML elements (like H1, A, etc.) */
+@import url('./elements/blocks.css');
+@import url('./elements/buttons.css');
+@import url('./elements/form-elements.css');
+@import url('./elements/headings.css');
+@import url('./elements/links.css');
+
+/* OBJECTS */
+/* FAQ: Class-based selectors which define undecorated design patterns, i.e. layouts */
+/* NOTE: For the msot part, allow React components to explicitely import as needed */
+
+/* COMPONENTS */
+/* FAQ: Specific UI components */
+/* NOTE: For the msot part, allow React components to explicitely import as needed */
+
+/* TRUMPS */
+/* FAQ: Utilities and helper classes with ability to override anything before it */
+/* NOTE: For the msot part, allow React components to explicitely import as needed */
 @import url('./trumps/icon.css');

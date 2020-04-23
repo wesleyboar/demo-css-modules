@@ -1,7 +1,36 @@
-$color: snow;
+/*
+Nav
 
+A generic navigation component.
+
+Markup:
+<!-- minimal markup -->
+<nav class="c-nav">
+  <a class="c-nav__item c-nav__link c-nav__icon">Click Me</a>
+  <a class="c-nav__item c-nav__link c-nav__icon">Click Me</a>
+</nav>
+<!-- maximum markup -->
+<nav class="c-nav">
+    <ul class="c-nav__list">
+      <li class="c-nav__item">
+        <a class="c-nav__link">
+          <i class="c-nav__icon">🎯</i>
+          <span class="c-nav__text">Click Me</span>
+        </a>
+      </li>
+      <li class="c-nav__item">
+        <a class="c-nav__link">
+          <i class="c-nav__icon">🎯</i>
+          <span class="c-nav__text">Click Me</span>
+        </a>
+      </li>
+    </ul>
+</nav>
+
+Styleguide Components.Nav
+*/
 .c-nav {
-  background-color: $color;
+  background-color: var(--global-color-primary--x-light);
 }
 
 .c-nav__list {

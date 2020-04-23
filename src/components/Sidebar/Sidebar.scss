@@ -1,6 +1,6 @@
 /* BEM: The "block" is the component itself */
 /* Here are styles for the component root */
-.container {
+._ {
   composes: c-nav from '/../src/styles/components/c-nav.scss';
 }
 

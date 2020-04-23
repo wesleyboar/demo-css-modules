@@ -1,10 +1,10 @@
 import React from 'react';
 
-import classNames from './Nav.scss';
+import classNames from './Sidebar.scss';
 
-function Nav(props) {
+function Sidebar(props) {
   return (
-    <nav className={classNames.container}>
+    <nav className={props.className + ' ' + classNames._}>
       <ul className={classNames.list}>
       {props.children.map( (link, index) => (
         <li className={classNames.item}
@@ -22,4 +22,4 @@ function Nav(props) {
   );
 }
 
-export default Nav;
+export default Sidebar;

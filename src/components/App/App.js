@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Nav from '../Nav';
-import WelcomeSection from '../WelcomeSection';
+import Sidebar from '../Sidebar';
+import Dashboard from '../Dashboard';
 
-import './App.scss';
+import classNames from './App.scss';
 
 const dumbRoutes = [{
     url: 'fake',
@@ -21,11 +21,11 @@ const dumbRoutes = [{
 
 function App() {
   return(
-    <div className="app">
-      <Nav>
+    <div className={classNames._}>
+      <Sidebar className={classNames.sidebar}>
         {dumbRoutes}
-      </Nav>
-      <WelcomeSection />
+      </Sidebar>
+      <Dashboard className={classNames.content} />
     </div>
   );
 }

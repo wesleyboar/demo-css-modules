@@ -1,0 +1,50 @@
+/* GENERIC: Roots */
+
+html {
+    /* FAQ: Makes `1.0rem` equal `10px` */
+    /* SEE: http://snook.ca/archives/html_and_css/font-size-with-rem */
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+
+    color: var(--global-color-primary--normal);
+    line-height: var(--global-line-height);
+    font-family: var(--global-font-family--sans);
+    font-size: 1.4rem;
+}
+
+/* Allow expansion (with no respect to ancestors and siblings) */
+/* FAQ: The `html` and `body` boxes are only as tall as their content
+        (which may be shorter than window height), and cannot have siblings elements
+        (would be influenced by force stretch); so, force stretch outward. */
+html,
+body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/* Allow expansion (with respect to ancestors and siblings)
+
+    <body>
+      <div id="root">
+        <App>…</App>
+      </div>
+    </body>
+*/
+/* FAQ: Shared hosting with CMS renders header and footer siblings */
+/* FAQ: The `.content` and `#react-root` boxes are only as tall as their content
+        (which may be shorter than window height), can have siblings elements
+        (would be influenced by force stretch), so gently stretch outward. */
+body,
+#root {
+  display: flex;
+  flex-direction: column;
+}
+#root,
+#root > :only-child {
+  flex-grow: 1;
+}

@@ -1,0 +1,23 @@
+/* ELEMENTS: Form */
+
+input,
+textarea {
+    padding: 0.5em 0.75em; /* NOTE: Wes B used `0.5em` isntead of `0.4375` (7px) */
+
+    border: var(--global-border--normal);
+
+    color: var(--global-color-primary--xx-dark);
+}
+
+/* Do not use `label + label { padding-left: … }` (to reduce rulesets),
+   because, for `display: block` labels, padding would appear at line start */
+label               { padding-right: 2.0rem; }
+label:last-of-type  { padding-right: 0; }
+
+label [type="radio"],
+label [type="checkbox"] {
+    margin-right: 0.5em; /* NOTE: Wes B used `0.5em` isntead of `0.571…` (8px) */
+}
+label {
+    line-height: 2.0; /* NOTE: Wes B used `2.0` isntead of `1.928…` (27px) */
+}
