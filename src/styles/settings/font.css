@@ -1,7 +1,7 @@
 /* SETTINGS: Font */
 
 :root {
-    --global-font-family--sans: 'Open Sans', sans-serif;
+    --global-font-family--sans: 'Roboto', sans-serif;
     --global-font-family--serif: Times, sans-serif;
     --global-font-family--mono: monospace;
 

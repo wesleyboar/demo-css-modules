@@ -11,7 +11,7 @@ body {
     color: var(--global-color-primary--normal);
     line-height: var(--global-line-height);
     font-family: var(--global-font-family--sans);
-    font-size: 1.4rem;
+    font-size: 1.0rem;
 }
 
 /* Allow expansion (with no respect to ancestors and siblings) */
