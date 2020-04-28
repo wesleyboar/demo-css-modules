@@ -1,3 +1,8 @@
+/* Variables */
+/* NOTE: Using SASS variable, only to prove it works; `var` is native CSS */
+$background: var(--global-color-primary--xx-light);
+$borderColor: var(--global-color-primary--light);
+
 /* BEM: The "block" is the component itself */
 /* Here are styles for the component root */
 ._ {
@@ -7,6 +12,14 @@
 /* BEM: Here are the child "elements" */
 .sidebar {
   composes: o-app__side from '/../src/styles/objects/o-app.css';
+
+  min-width: 16.55rem;
+
+  background-color: $background;
+  border-right: 1px solid $borderColor;
+}
+.sidebar a {
+  padding: 0.9rem 2.0rem;
 }
 .content {
   composes: o-app__body from '/../src/styles/objects/o-app.css';

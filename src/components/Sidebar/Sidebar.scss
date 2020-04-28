@@ -7,15 +7,32 @@
 /* BEM: Here are the child "elements" */
 .list {
   composes: c-nav__list from '/../src/styles/components/c-nav.scss';
+
+  padding: 20px 0;
 }
 .item {
   composes: c-nav__item from '/../src/styles/components/c-nav.scss';
-
-  border-bottom: 1px solid gray;
 }
 .link {
   composes: c-nav__link from '/../src/styles/components/c-nav.scss';
+
+  color: gray;
+  text-decoration: none;
+}
+.link:hover,
+.link:target,
+.link:focus {
+  background-color: lavender;
+
+  font-weight: bold;
+  text-decoration: none;
+}
+.link:active .text {
+  position: relative;
+  top: 1px;
 }
 .icon {
   composes: c-nav__icon from '/../src/styles/components/c-nav.scss';
+
+  margin-right: 1.6rem;
 }
