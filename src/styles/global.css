@@ -13,7 +13,7 @@
 
 /* GENERIC */
 /* FAQ: Reset and/or normalize styles, box-sizing definition, etc. */
-@import url('./generics/all-elements.css');
+@import url('./generics/wildcard.css');
 @import url('./generics/roots.css');
 
 /* ELEMENTS */
