@@ -24,6 +24,7 @@ Styleguide Objects.App
 .o-app,
 [class*="o-app--"] {
   display: flex;
+  justify-content: stretch;
 }
 
 /* Z-Axis */
@@ -42,6 +43,9 @@ Styleguide Objects.App
   }
   & > .o-app__body {
     flex-grow: 1;
+  }
+  & > table.o-app__body {
+    height: 100%;
   }
   & > .o-app__foot {
     flex-grow: 0;
@@ -62,6 +66,11 @@ Styleguide Objects.App
   }
   & > .o-app__body {
     flex-grow: 1;
+  }
+  /* A table, as a flex item, can not behave as naively desired; so nest it */
+  /* SEE: https://stackoverflow.com/a/41421700 */
+  & > .o-app__body > table {
+    width: 100%;
   }
 
   /* CAVEAT: Not supported */

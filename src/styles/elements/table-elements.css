@@ -1,0 +1,19 @@
+/* ELEMENTS: Table */
+
+table {
+    border-collapse: collapse;
+}
+thead {
+    border-bottom: var(--global-border--normal);
+}
+thead td {
+    font-weight: bold;
+}
+
+th,
+td {
+    padding: 0.85rem;
+}
+th {
+    text-align: left;
+}

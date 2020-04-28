@@ -23,16 +23,18 @@
 @import url('./elements/form-elements.css');
 @import url('./elements/headings.css');
 @import url('./elements/links.css');
+@import url('./elements/table-elements.css');
 
 /* OBJECTS */
 /* FAQ: Class-based selectors which define undecorated design patterns, i.e. layouts */
-/* NOTE: For the msot part, allow React components to explicitely import as needed */
+/* NOTE: For the most part, allow React components to explicitely import as needed */
 
 /* COMPONENTS */
 /* FAQ: Specific UI components */
-/* NOTE: For the msot part, allow React components to explicitely import as needed */
+/* NOTE: For the most part, allow React components to explicitely import as needed */
+@import url('./components/c-link.css');
 
 /* TRUMPS */
 /* FAQ: Utilities and helper classes with ability to override anything before it */
-/* NOTE: For the msot part, allow React components to explicitely import as needed */
+/* NOTE: For the most part, allow React components to explicitely import as needed */
 @import url('./trumps/icon.css');

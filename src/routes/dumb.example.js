@@ -26,4 +26,14 @@ const dumbRoutesB = [{
     icon: 'nav-notification'
 }];
 
-export { dumbRoutesA, dumbRoutesB };
+const dumbRoutesC = [{
+    url: 'allocations',
+    text: 'Fruit'
+  }, {
+    text: '…'
+  }, {
+    url: 'approved',
+    text: 'Meat'
+}];
+
+export { dumbRoutesA, dumbRoutesB, dumbRoutesC };

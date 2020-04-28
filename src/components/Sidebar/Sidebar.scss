@@ -1,38 +1,52 @@
+/* Variables */
+/* NOTE: Using SASS variable, only to prove it works; `var` is native CSS */
+$linkHighlightColor: var(--global-color-accent--light);
+
 /* BEM: The "block" is the component itself */
 /* Here are styles for the component root */
 ._ {
-  composes: c-nav from '/../src/styles/components/c-nav.scss';
+  composes: c-nav from '/../src/styles/components/c-nav.css';
 }
 
 /* BEM: Here are the child "elements" */
 .list {
-  composes: c-nav__list from '/../src/styles/components/c-nav.scss';
+  composes: c-nav__list from '/../src/styles/components/c-nav.css';
 
   padding: 20px 0;
 }
+
 .item {
-  composes: c-nav__item from '/../src/styles/components/c-nav.scss';
+  composes: c-nav__item from '/../src/styles/components/c-nav.css';
 }
+
 .link {
-  composes: c-nav__link from '/../src/styles/components/c-nav.scss';
+  composes: c-nav__link from '/../src/styles/components/c-nav.css';
 
   color: gray;
   text-decoration: none;
-}
-.link:hover,
-.link:target,
-.link:focus {
-  background-color: lavender;
 
-  font-weight: bold;
-  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  &:hover,
+  &:target,
+  &:focus {
+    background-color: $linkHighlightColor;
+  }
+  &:target,
+  &:focus {
+    font-weight: bold;
+  }
+  &:active .text {
+    /* FAQ: CSS Modules does not allow `composes` within pseudo class/element */
+    /* composes: c-link from '/../src/styles/components/c-link.css'; */
+    position: relative;
+    top: 1px;
+  }
 }
-.link:active .text {
-  position: relative;
-  top: 1px;
-}
+
 .icon {
-  composes: c-nav__icon from '/../src/styles/components/c-nav.scss';
+  composes: c-nav__icon from '/../src/styles/components/c-nav.css';
 
   margin-right: 1.6rem;
 }

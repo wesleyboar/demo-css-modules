@@ -1,0 +1,30 @@
+/* Variables */
+/* NOTE: Using SASS variable, only to prove it works; `var` is native CSS */
+$border: var(--global-border--normal);
+$buffer: 2.0rem;
+
+/* BEM: The "block" is the component itself */
+/* Here are styles for the component root */
+._ {
+  composes: o-app--layout-vert from '/../src/styles/objects/o-app.css';
+
+  padding-right: $buffer;
+}
+
+/* BEM: Here are the child "elements" */
+.head {
+  composes: o-app__head from '/../src/styles/objects/o-app.css';
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: $buffer 0 0.65rem $buffer;
+}
+.body {
+  composes: o-app__body from '/../src/styles/objects/o-app.css';
+  composes: o-app--layout-horz from '/../src/styles/objects/o-app.css';
+
+  border-top: $border;
+}

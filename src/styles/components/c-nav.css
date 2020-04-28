@@ -5,7 +5,7 @@ A generic navigation component.
 
 Markup:
 <!-- minimal markup -->
-<nav class="c-nav">
+<nav class="c-nav c-nav__list">
   <a class="c-nav__item c-nav__link c-nav__icon">Click Me</a>
   <a class="c-nav__item c-nav__link c-nav__icon">Click Me</a>
 </nav>

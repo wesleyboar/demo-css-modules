@@ -2,11 +2,14 @@
 /* NOTE: Using SASS variable, only to prove it works; `var` is native CSS */
 $background: var(--global-color-primary--xx-light);
 $borderColor: var(--global-color-primary--light);
+$border: var(--global-border--normal);
+$buffer: 2.0rem;
 
 /* BEM: The "block" is the component itself */
 /* Here are styles for the component root */
 ._ {
-  composes: o-app--layout-horz from '/../src/styles/objects/o-app.css';
+  /* FAQ: Here we could technically apply styles on the <MainContent> wrapper */
+  /* … */
 }
 
 /* BEM: Here are the child "elements" */
@@ -21,6 +24,9 @@ $borderColor: var(--global-color-primary--light);
 .sidebar a {
   padding: 0.9rem 2.0rem;
 }
+
 .content {
   composes: o-app__body from '/../src/styles/objects/o-app.css';
+
+  margin: $buffer 0 $buffer $buffer;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Sidebar from '../Sidebar';
-import Dashboard from '../Dashboard';
+import ExampleSection from '../ExampleSection';
 
 import { dumbRoutesA } from '../../routes/dumb.example.js';
 
@@ -13,7 +13,7 @@ function App() {
       <Sidebar className={classNames.sidebar}>
         {dumbRoutesA}
       </Sidebar>
-      <Dashboard className={classNames.content} />
+      <ExampleSection className={classNames.content} />
     </div>
   );
 }

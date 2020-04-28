@@ -1,0 +1,43 @@
+/* Variables */
+/* NOTE: Using SASS variable, only to prove it works; `var` is native CSS */
+$linkColor: var(--global-color-accent--normal);
+$delimiterColor: var(--global-color-primary--x-dark);
+$borderWidth: var(--global-border-width--normal);
+
+/* BEM: The "block" is the component itself */
+/* Here are styles for the component root */
+._ {
+  font-size: 1.5rem;
+}
+
+/* BEM: Here are the child "elements" */
+.item:not(:last-child)::after {
+  content: ' / ';
+  display: inline;
+  color: $delimiterColor;
+}
+.item.text {
+  /* This combination is used for the `…` text, which need not be interactive */
+  /* WARNING: This style assumes information from content indepenent of styling */
+  cursor: default;
+}
+
+.link {
+  color: $linkColor;
+}
+.link:hover,
+.link:target,
+.link:focus {
+  &:hover {
+    text-decoration: none;
+  }
+  & .text {
+    border-bottom: $borderWidth solid $linkColor;
+  }
+}
+.link:active .text {
+  /* FAQ: CSS Modules does not allow `composes` within pseudo class/element */
+  /* composes: c-link from '/../src/styles/components/c-link.css'; */
+  position: relative;
+  top: 1px;
+}

@@ -8,7 +8,7 @@ input[type="clear"] {
 
     color: var(--global-color-primary--xx-light);
     background-color: var(--global-color-accent--normal);
-    border: var(--global-border-width--thick) solid transparent;
+    border: var(--global-border-width--normal) solid transparent;
 
     font-weight: bold;
 }

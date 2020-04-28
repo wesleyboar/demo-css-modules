@@ -1,0 +1,18 @@
+/*
+Link
+
+A basic text hyperlink.
+
+Markup:
+<a class="c-link">Click Me</a>
+<button class="c-link">I look like a button</button>
+
+Styleguide Components.Nav
+*/
+/* FAQ: Components are not normally global, this is an exception */
+:global {
+  & .c-link:active {
+    position: relative;
+    top: 1px;
+  }
+}
