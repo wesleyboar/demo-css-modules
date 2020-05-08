@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "parcel --no-cache ./public/index.html",
-    "build": "parcel --no-cache build ./public/index.html",
+    "build": "parcel build --no-cache ./public/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "wbomar@tacc.utexas.edu",
